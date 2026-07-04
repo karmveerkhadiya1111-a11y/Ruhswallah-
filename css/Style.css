@@ -1,0 +1,144 @@
+/* ==========================
+   RUHS WALLAH V1
+   ========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#0F172A;
+    color:#ffffff;
+    overflow-x:hidden;
+}
+
+/* Navbar */
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 8%;
+    position:fixed;
+    width:100%;
+    top:0;
+    z-index:1000;
+    background:rgba(15,23,42,.75);
+    backdrop-filter:blur(15px);
+    border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.logo img{
+    width:50px;
+}
+
+.logo h2{
+    font-size:26px;
+    font-weight:700;
+}
+
+.navbar ul{
+    display:flex;
+    list-style:none;
+    gap:35px;
+}
+
+.navbar ul li a{
+    text-decoration:none;
+    color:#fff;
+    transition:.3s;
+    font-weight:500;
+}
+
+.navbar ul li a:hover{
+    color:#F97316;
+}
+
+.telegram-btn{
+    text-decoration:none;
+    background:#F97316;
+    color:#fff;
+    padding:12px 24px;
+    border-radius:40px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.telegram-btn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 10px 25px rgba(249,115,22,.35);
+}
+
+/* Hero */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:120px 8%;
+}
+
+.hero-content{
+    max-width:600px;
+}
+
+.hero h1{
+    font-size:58px;
+    line-height:1.2;
+}
+
+.hero h1 span{
+    color:#F97316;
+}
+
+.hero p{
+    margin:25px 0;
+    color:#cbd5e1;
+    font-size:18px;
+    line-height:1.8;
+}
+
+.buttons{
+    display:flex;
+    gap:20px;
+}
+
+.primary,
+.secondary{
+    text-decoration:none;
+    padding:14px 28px;
+    border-radius:40px;
+    font-weight:600;
+}
+
+.primary{
+    background:#F97316;
+    color:#fff;
+}
+
+.secondary{
+    border:2px solid #F97316;
+    color:#fff;
+}
+
+.hero-image img{
+    width:520px;
+    animation:float 4s ease-in-out infinite;
+}
+
+@keyframes float{
+    0%,100%{transform:translateY(0);}
+    50%{transform:translateY(-18px);}
+}
