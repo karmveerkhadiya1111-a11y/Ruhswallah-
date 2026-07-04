@@ -142,3 +142,60 @@ body{
     0%,100%{transform:translateY(0);}
     50%{transform:translateY(-18px);}
 }
+/* ==========================
+   LIVE STATS
+========================== */
+
+.stats{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+    padding:60px 8%;
+}
+
+.stat-card{
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:20px;
+    padding:35px;
+    text-align:center;
+    transition:.35s;
+    backdrop-filter:blur(12px);
+}
+
+.stat-card:hover{
+    transform:translateY(-8px);
+    border-color:#F97316;
+    box-shadow:0 15px 40px rgba(249,115,22,.20);
+}
+
+.stat-card h2{
+    font-size:42px;
+    color:#F97316;
+    margin-bottom:10px;
+}
+
+.stat-card p{
+    color:#cbd5e1;
+    font-size:18px;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.stats{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.hero{
+    flex-direction:column;
+    text-align:center;
+}
+
+.hero-image img{
+    width:320px;
+    margin-top:40px;
+}
+
+}
