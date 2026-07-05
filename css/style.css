@@ -135,10 +135,18 @@ body{
     border:2px solid #F97316;
     color:#fff;
 }
-
 .hero-image img{
-    width:520px;
+    width:600px;
+    max-width:100%;
+    height:auto;
+    display:block;
+    filter:drop-shadow(0 20px 40px rgba(249,115,22,.35));
     animation:float 4s ease-in-out infinite;
+    transition:.3s;
+}
+
+.hero-image img:hover{
+    transform:scale(1.03);
 }
 
 @keyframes float{
