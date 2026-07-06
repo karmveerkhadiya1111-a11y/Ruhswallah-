@@ -29,10 +29,9 @@ body{
     top:0;
     z-index:1000;
     background:rgba(15,23,42,.75);
-    backdrop-filter:blur(15px);
+    backdrop-filter:blur(12px);
     border-bottom:1px solid rgba(255,255,255,.08);
 }
-
 .logo{
     display:flex;
     align-items:center;
@@ -91,7 +90,7 @@ body{
     justify-content:space-between;
     align-items:center;
     gap:60px;
-    padding:120px 8%;
+    padding:60px 8%;
 }
 
 .hero-content{
@@ -108,7 +107,9 @@ body{
 .hero h1 span{
     color:#F97316;
 }
-
+.hero span{
+    text-shadow:0 0 20px rgba(249,115,22,.35);
+}
 .hero p{
     margin:25px 0;
     color:#cbd5e1;
@@ -133,7 +134,10 @@ body{
     background:#F97316;
     color:#fff;
 }
-
+.primary:hover{
+    transform:translateY(-4px);
+    box-shadow:0 15px 35px rgba(249,115,22,.35);
+}
 .secondary{
     border:2px solid #F97316;
     color:#fff;
@@ -146,7 +150,7 @@ body{
 }
 
 .hero-image img{
-    width:620px;
+    width:420px;
     max-width:100%;
     height:auto;
     display:block;
