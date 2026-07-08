@@ -1,1 +1,0 @@
-// RUHS WALLAH JavaScript
